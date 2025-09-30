@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Selector de Géneros</title>
+  <style>
+    :root {
+      --primary: #4F46E5;
+      --primary-hover: #4338CA;
+      --accent: #10B981;
+      --danger: #DC2626;
+      --text: #1F2937;
+      --subtext: #6B7280;
+      --background: #F9FAFB;
+      --badge-bg: #E0F2FE;
+      --badge-text: #0369A1;
+      --focus: #FACC15;
+      --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', 'Montserrat', sans-serif;
+      background: var(--background);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 2rem;
+      transition: background 0.3s;
+    }
+    .container {
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: var(--shadow);
+      padding: 2.5rem;
+      width: 100%;
+      max-width: 720px;
+      transition: transform 0.3s, background 0.3s;
+      position: relative;
+    }
+    .container:hover { transform: translateY(-4px) scale(1.01); }
+    h1 { font-size: 2.2rem; font-weight: 700; color: var(--primary); margin-bottom: 0.5rem; }
+    p.subheader { color: var(--subtext); margin-bottom: 1.6rem; font-size: 1.1rem; }
+    .search-input {
+      width: 100%;
+      padding: 0.75rem 1rem;
+      border: 2px solid #E5E7EB;
+      border-radius: 12px;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      background: var(--background);
+      color: var(--text);
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .search-input:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 2px var(--focus);
+      outline: none;
+    }
+    .badges { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 1.2rem; }
+    .badge {
+      background: var(--badge-bg);
+      color: var(--badge-text);
+      padding: 0.45rem 0.9rem;
+      border-radius: 50px;
+      font-size: 1rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-weight: 600;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+      animation: popIn 0.25s;
+    }
+    @keyframes popIn {
+      from { transform: scale(0.8); opacity: 0.5; }
+      to   { transform: scale(1); opacity: 1; }
+    }
+    .badge button {
+      background: none; border: none; font-weight: bold;
+      cursor: pointer; color: var(--danger); font-size: 1.2rem;
+      padding: 0 0.23rem;
+      border-radius: 50%;
+      transition: background 0.2s;
+    }
+    .badge button:focus {
+      background: var(--focus);
+      outline: none;
+    }
+    .genre-list, .label-list {
+      display: grid; gap: 0.75rem; margin-bottom: 1.5rem;
+    }
+    .genre-list { grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); }
+    .label-list { grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); }
+    .genre-button, .label-button {
+      padding: 0.75rem;
+      border: 2px solid #E5E7EB;
+      border-radius: 14px;
+      font-size: 1.01rem;
+      text-align: center;
+      cursor: pointer;
+      background: #F3F4F6;
+      color: var(--text);
+      font-weight: 500;
+      letter-spacing: .01em;
+      transition: all 0.22s;
+      outline: none;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+      position: relative;
+    }
+    .genre-button:hover, .label-button:hover, .genre-button:focus, .label-button:focus {
+      background-color: #E0E7FF;
+      border-color: var(--primary);
+      z-index: 2;
+    }
+    .genre-button.active { 
+      background-color: var(--primary); 
+      color: white; 
+      border-color: var(--primary); 
+      box-shadow: 0 2px 10px rgba(79,70,229,0.12);
+    }
+    .label-button.active { 
+      background-color: var(--accent); 
+      color: white; 
+      border-color: var(--accent); 
+      box-shadow: 0 2px 10px rgba(16,185,129,0.10);
+    }
+    .submit-button {
+      width: 100%; background: var(--primary); color: white;
+      padding: 0.92rem; font-size: 1.08rem; border: none;
+      border-radius: 14px; font-weight: bold; cursor: pointer;
+      margin-top: 0.3rem;
+      box-shadow: 0 2px 12px rgba(79,70,229,0.08);
+      transition: background 0.2s, box-shadow 0.2s;
+      outline: none;
+    }
+    .submit-button:hover, .submit-button:focus { background: var(--primary-hover); box-shadow: 0 4px 16px rgba(67,56,202,0.16);}
+    .submit-button:disabled { background: #9CA3AF; cursor: not-allowed; box-shadow: none;}
+    .submit-button.reset-btn {
+      margin-top: 0.8rem;
+      background: var(--danger);
+      color: #fff;
+      box-shadow: 0 2px 8px rgba(220,38,38,0.08);
+    }
+    .submit-button.reset-btn:hover, .submit-button.reset-btn:focus {
+      background: #b91c1c;
+    }
+    .genre-button:focus-visible, .label-button:focus-visible, .submit-button:focus-visible {
+      box-shadow: 0 0 0 3px var(--focus);
+      border-color: var(--focus);
+    }
+    @media (max-width: 600px) {
+      .container { padding: 1.2rem; }
+      h1 { font-size: 1.3rem;}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>¿Qué Género Musical Tocas?</h1>
+    <p class="subheader">Selecciona uno o más géneros musicales.</p>
+
+    <input type="text" id="searchInput" placeholder="Buscar género…" class="search-input" aria-label="Buscar género musical" />
+    <div class="badges" id="selectedGenresContainer"></div>
+    <div class="genre-list" id="genreList"></div>
+
+    <div id="artistTypeSection" style="display: none; margin-bottom: 1.5rem;">
+      <h2 class="subheader">¿Eres artista independiente o trabajas con una disquera mayor?</h2>
+      <div class="label-list">
+        <button id="independentBtn" class="label-button" type="button" aria-label="Artista independiente">Independiente</button>
+        <button id="majorBtn" class="label-button" type="button" aria-label="Artista Major Label">Major Label</button>
+      </div>
+    </div>
+
+    <div id="labelsSection" style="display: none;">
+      <h2 class="subheader">¿Con qué disquera trabajas?</h2>
+      <div class="label-list" id="labelList"></div>
+    </div>
+
+    <!-- FORMATS SECTION: Only show if Major Label selected -->
+    <div id="formatsSection" style="display: none;">
+      <h2 class="subheader">¿En cuáles de los siguientes formatos te gustaría sonar?</h2>
+      <div class="label-list" id="formatList"></div>
+    </div>
+
+    <div id="associationsSection" style="display: none;">
+      <h2 class="subheader">¿Perteneces a alguna de estas asociaciones?</h2>
+      <div class="label-list" id="associationList"></div>
+    </div>
+
+    <button class="submit-button" id="submitBtn" type="button" tabindex="0">Enviar selección</button>
+    <button class="submit-button reset-btn" type="button" tabindex="0">Borrar selección</button>
+  </div>
+
+  <script>
+    const GENRES = [
+      "Acústico Español","Acústico Inglés","Banda","Bossa","Cumbia","Dance","Disney",
+      "Electro Pop Español","Electro Pop Inglés","Grupero","House","Indie Español",
+      "Indie Inglés","Indie Pop","Infantil Español","Infantil Inglés","Jazz","K-Pop",
+      "Lounge","Mariachi","Norteña","Pop Español","Pop Inglés","Pop Latino","Retro Español",
+      "Retro Inglés","Rock","Rock Español","Rock Inglés","Rock Pop","Salsa","Otro"
+    ].sort((a, b) => a.localeCompare(b, 'es'));
+
+    const RECORD_LABELS = [
+      "ALTAFONTE","BALBOA RECORDS","BQ & CODA PUBLIS","COMPAÑÍA FONOGRÁFICA",
+      "DISCOS CIUDAD","DISCOS MUSART","DISCOS Y CASSETTES PHOENIX","DISCOS Y CINTAS DENVER",
+      "EMI MUSIC","MAYRA MUSIC","MEXICAN RECORDS","MULTIMUSIC","MULTITRACK",
+      "MÚSICA MEDIA MÉXICO","ORFEÓN VIDEOVOX","PEERLES-MC","PRODUCCIONES DISCOGRÁFICAS MEXICANAS",
+      "PRODUCCIONES FONOGRÁFICAS JASPER","PROMOTO MÉXICO","SONY MUSIC",
+      "UNIVERSAL","WARNER","Otro"
+    ];
+
+    const ASSOCIATIONS = ["SACM (Como compositor)","ANDI (Como intérprete)","AMBAS","OTRO"];
+
+    const GENRE_FORMATS = {
+      "Acústico Inglés":["SORIANA HIPER","FRESKO","CITY MARKET","WAL-MART","WAL-MART EXPRESS","HEB","MERCO","GUAJARDO","OFFICE MAX"],
+      "Banda":["TIENDA DEL AHORRO","SUPERIOR GROCERS"],
+      "Cumbia":["TIENDA DEL AHORRO","GUAJARDO","SUPERIOR GROCERS"],
+      "Electro Pop Español":["SORIANA HIPER","SORIANA SUPER","LA COMER","SUMESA","HEB"],
+      "Electro Pop Inglés":["SORIANA HIPER","SORIANA SUPER","LA COMER","FRESKO","SUMESA","CITY MARKET","WAL-MART EXPRESS","HEB","SAMS CLUB","UNIVERSO DE FRAGANCIAS","PETCO","SUPERIOR GROCERS","OFFICE MAX","SALLY BEAUTY","ARUMA"],
+      "Indie Español":["SAMS CLUB"],
+      "Indie Inglés":["LA COMER","SUMESA","CITY MARKET","WAL-MART","WAL-MART EXPRESS","SAMS CLUB","PETCO","SUPERIOR GROCERS","OFFICE MAX"],
+      "Jazz":["LA COMER","CITY MARKET","WAL-MART EXPRESS"],
+      "K-Pop":["ARUMA"],
+      "Lounge":["FRESKO","SUMESA","CITY MARKET","WAL-MART EXPRESS","UNIVERSO DE FRAGANCIAS"],
+      "Mariachi":[],
+      "Norteña":["TIENDA DEL AHORRO"],
+      "Pop Español":["SORIANA HIPER","SORIANA SUPER","SORIANA MERCADO","FRESKO","SUMESA","WAL-MART","HEB","TIENDA DEL AHORRO","MERCO","SAMS CLUB","GUAJARDO","UNIVERSO DE FRAGANCIAS","PETCO","SUPERIOR GROCERS","OFFICE MAX","SALLY BEAUTY","ARUMA"],
+      "Pop Inglés":["SORIANA HIPER","SORIANA SUPER","FRESKO","SUMESA","WAL-MART","WAL-MART EXPRESS","HEB","MERCO","SAMS CLUB","GUAJARDO","UNIVERSO DE FRAGANCIAS","PETCO","SUPERIOR GROCERS","OFFICE MAX","SALLY BEAUTY","ARUMA"],
+      "Pop Latino":["TIENDA DEL AHORRO","UNIVERSO DE FRAGANCIAS","SUPERIOR GROCERS","SALLY BEAUTY"],
+      "Retro Español":["MERCO","SAMS CLUB","PETCO"],
+      "Retro Inglés":["MERCO","SAMS CLUB","PETCO","OFFICE MAX"],
+      "Rock Español":[],
+      "Rock Inglés":["FRESKO","WAL-MART","WAL-MART EXPRESS","HEB","UNIVERSO DE FRAGANCIAS","PETCO","OFFICE MAX"],
+      "Salsa":["GUAJARDO"]
+    };
+
+    let selectedGenres=[],selectedLabel=null,artistType=null,selectedAssociations=[],selectedFormats=[],processBlocked=false;
+
+    const genreList=document.getElementById("genreList"),
+          labelList=document.getElementById("labelList"),
+          selectedGenresContainer=document.getElementById("selectedGenresContainer"),
+          labelsSection=document.getElementById("labelsSection"),
+          artistTypeSection=document.getElementById("artistTypeSection"),
+          associationsSection=document.getElementById("associationsSection"),
+          associationList=document.getElementById("associationList"),
+          searchInput=document.getElementById("searchInput"),
+          formatsSection=document.getElementById("formatsSection"),
+          formatList=document.getElementById("formatList"),
+          submitBtn=document.getElementById("submitBtn"),
+          resetBtn=document.querySelector(".reset-btn");
+
+    function renderGenres(){
+      const query=searchInput.value.trim().toLowerCase();
+      genreList.innerHTML="";
+      GENRES.filter(g=>g.toLowerCase().includes(query)).forEach(genre=>{
+        const btn=document.createElement("button");
+        btn.className="genre-button"+(selectedGenres.includes(genre)?" active":"");
+        btn.textContent=genre; btn.type="button";
+        btn.setAttribute("tabindex", "0");
+        btn.setAttribute("aria-label", "Seleccionar género musical " + genre);
+        btn.onclick=()=>toggleGenre(genre);
+        genreList.appendChild(btn);
+      });
+    }
+
+    function toggleGenre(genre){
+      if(selectedGenres.includes(genre)) {
+        selectedGenres = selectedGenres.filter(g => g !== genre);
+        if(genre === "Otro") {
+          processBlocked = false;
+          submitBtn.disabled = false;
+        }
+      } else{
+        selectedGenres.push(genre);
+        if(genre==="Otro"){ 
+          alert("Estamos trabajando en nuevas ideas para ti."); 
+          processBlocked=true; 
+          submitBtn.disabled=true; 
+        }
+      }
+      updateSelectedGenres(); 
+      renderGenres(); 
+      updateLabelsVisibility(); 
+      saveToLocalStorage();
+    }
+
+    function updateSelectedGenres(){
+      selectedGenresContainer.innerHTML="";
+      selectedGenres.forEach(genre=>{
+        const badge=document.createElement("div");
+        badge.className="badge";
+        badge.innerHTML=`${genre}`;
+        const closeBtn = document.createElement("button");
+        closeBtn.setAttribute("type","button");
+        closeBtn.setAttribute("aria-label", "Quitar " + genre);
+        closeBtn.textContent = "×";
+        closeBtn.onclick = () => toggleGenre(genre);
+        badge.appendChild(closeBtn);
+        selectedGenresContainer.appendChild(badge);
+      });
+    }
+
+    function updateLabelsVisibility(){
+      if(selectedGenres.length>0 && !processBlocked) artistTypeSection.style.display="block";
+      else{
+        artistTypeSection.style.display="none"; labelsSection.style.display="none";
+        associationsSection.style.display="none"; formatsSection.style.display="none";
+        artistType=null; selectedAssociations=[]; selectedFormats=[];
+      }
+      // HIDE FORMATS SECTION IF NOT MAJOR LABEL (correction)
+      if(artistType !== "major") {
+        formatsSection.style.display = "none";
+        selectedFormats = [];
+      }
+    }
+
+    function selectArtistType(type){
+      if(processBlocked) return;
+      artistType=type;
+      document.getElementById("independentBtn").classList.toggle("active",type==="independent");
+      document.getElementById("majorBtn").classList.toggle("active",type==="major");
+      if(type==="major"){ labelsSection.style.display="block"; associationsSection.style.display="none"; renderLabels(); }
+      else{ labelsSection.style.display="none"; associationsSection.style.display="block"; renderAssociations(); }
+      // Hide formats unless Major Label
+      if(type!=="major") {
+        formatsSection.style.display = "none";
+        selectedFormats = [];
+      }
+      saveToLocalStorage();
+    }
+
+    document.getElementById("independentBtn").onclick = ()=>selectArtistType('independent');
+    document.getElementById("majorBtn").onclick = ()=>selectArtistType('major');
+
+    function renderLabels(){
+      labelList.innerHTML="";
+      RECORD_LABELS.forEach(label=>{
+        const btn=document.createElement("button");
+        btn.className="label-button"+(selectedLabel===label?" active":"");
+        btn.textContent=label; btn.type="button";
+        btn.setAttribute("tabindex","0");
+        btn.setAttribute("aria-label", "Seleccionar disquera " + label);
+        btn.onclick=()=>{ selectedLabel=label; renderLabels(); checkForFormats(); saveToLocalStorage(); };
+        labelList.appendChild(btn);
+      });
+    }
+
+    function renderAssociations(){
+      associationList.innerHTML="";
+      ASSOCIATIONS.forEach(association=>{
+        const btn=document.createElement("button");
+        btn.className="label-button"+(selectedAssociations.includes(association)?" active":"");
+        btn.textContent=association; btn.type="button";
+        btn.setAttribute("tabindex","0");
+        btn.setAttribute("aria-label", "Seleccionar asociación " + association);
+        btn.onclick=()=>{ 
+          selectedAssociations=[association]; 
+          renderAssociations(); 
+          saveToLocalStorage();
+          if(association.includes("ANDI")){ 
+            alert("Estamos trabajando en nuevas ideas para ti."); 
+            processBlocked=true; 
+            submitBtn.disabled=true; 
+          } else {
+            processBlocked=false;
+            submitBtn.disabled=false;
+          }
+        };
+        associationList.appendChild(btn);
+      });
+    }
+
+    function renderFormats(formats){
+      formatList.innerHTML="";
+      formats.forEach(format=>{
+        const btn=document.createElement("button");
+        btn.className="label-button"+(selectedFormats.includes(format)?" active":"");
+        btn.textContent=format; btn.type="button";
+        btn.setAttribute("tabindex","0");
+        btn.setAttribute("aria-label", "Seleccionar formato " + format);
+        btn.onclick=()=>{ 
+          if(selectedFormats.includes(format)) selectedFormats=selectedFormats.filter(f=>f!==format);
+          else selectedFormats.push(format);
+          renderFormats(formats); saveToLocalStorage();
+        };
+        formatList.appendChild(btn);
+      });
+    }
+
+    // Only show formats section if artistType is 'major'
+    function checkForFormats(){
+      if(artistType==="major" && selectedLabel){
+        let formats=[]; selectedGenres.forEach(g=>{ if(GENRE_FORMATS[g]) formats=formats.concat(GENRE_FORMATS[g]); });
+        formats=[...new Set(formats)];
+        if(formats.length>0){
+          formatsSection.style.display="block";
+          renderFormats(formats);
+        }
+        else{
+          formatsSection.style.display="none";
+          selectedFormats=[];
+        }
+      }else{
+        formatsSection.style.display="none";
+        selectedFormats=[];
+      }
+    }
+
+    function handleSubmit(){
+      if(processBlocked){ alert("No puedes continuar, estamos trabajando en nuevas ideas para ti."); return; }
+      if(selectedGenres.length===0){ alert("Por favor selecciona al menos un género musical."); return; }
+      if(!artistType){ alert("Por favor selecciona si eres artista independiente o trabajas con una disquera."); return; }
+      if(artistType==="major" && !selectedLabel){ alert("Por favor selecciona una disquera."); return; }
+      if(artistType==="independent" && selectedAssociations.length===0){ alert("Por favor selecciona una asociación."); return; }
+      if(artistType==="major"){
+        let requiresFormat=false;
+        selectedGenres.forEach(g=>{ if(GENRE_FORMATS[g] && GENRE_FORMATS[g].length>0) requiresFormat=true; });
+        if(requiresFormat && selectedFormats.length===0){ alert("Por favor selecciona al menos un formato."); return; }
+      }
+      alert(
+        `Has seleccionado:\nGéneros: ${selectedGenres.join(", ")}\nTipo de artista: ${artistType==="major"?"Major Label":"Independiente"}\n` +
+        (artistType==="major" ? `Disquera: ${selectedLabel}${selectedFormats.length>0?`\nFormatos: ${selectedFormats.join(", ")}`:""}` :
+         `Asociaciones: ${selectedAssociations.join(", ")}`)
+      );
+    }
+
+    function handleReset(){
+      selectedGenres=[]; selectedLabel=null; artistType=null; selectedAssociations=[]; selectedFormats=[]; processBlocked=false;
+      submitBtn.disabled=false; 
+      updateSelectedGenres(); 
+      renderGenres(); 
+      updateLabelsVisibility(); 
+      formatsSection.style.display="none";
+      localStorage.removeItem("genreSelectorState");
+    }
+
+    function saveToLocalStorage(){
+      localStorage.setItem("genreSelectorState",JSON.stringify({
+        selectedGenres,selectedLabel,artistType,selectedAssociations,selectedFormats,processBlocked
+      }));
+    }
+
+    function loadFromLocalStorage(){
+      const data=localStorage.getItem("genreSelectorState");
+      if(data){
+        const state=JSON.parse(data);
+        selectedGenres=state.selectedGenres||[]; selectedLabel=state.selectedLabel||null; artistType=state.artistType||null;
+        selectedAssociations=state.selectedAssociations||[]; selectedFormats=state.selectedFormats||[]; processBlocked=state.processBlocked||false;
+        updateSelectedGenres(); renderGenres(); updateLabelsVisibility();
+        if(artistType==="major"){ renderLabels(); if(selectedLabel) checkForFormats(); }
+        else if(artistType==="independent"){ renderAssociations(); }
+        if(processBlocked) submitBtn.disabled=true;
+      } else renderGenres();
+    }
+
+    searchInput.addEventListener("input",renderGenres);
+    submitBtn.addEventListener("click", handleSubmit);
+    resetBtn.addEventListener("click", handleReset);
+
+    selectedGenresContainer.addEventListener("keydown", function(e){
+      if((e.key==="Enter"||e.key===" "||e.key==="Delete") && e.target.tagName==="BUTTON"){
+        e.target.click();
+      }
+    });
+
+    loadFromLocalStorage();
+  </script>
+</body>
+</html>

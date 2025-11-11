@@ -1,10 +1,282 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <title>Calculadora de Impacto</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Selector VOXPOP – Cadenas y Calculadora (Final)</title>
+  <style>
+    :root {
+      /* Opción A - paleta moderna (azul / morado tenue) */
+      --primary: #0b467d;
+      --primary-hover: #083652;
+      --accent: #06B6D4; /* color usado para chips activos y ahora para la franja superior */
+      --danger: #EF4444;
+      --text: #0F172A;
+      --subtext: #475569;
+      --background: #F8FAFF;
+      --badge-bg: #E6F7FF;
+      --badge-text: #0369A1;
+      --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      --border: #e5e7eb;
+      --muted-bg: #f8fafc;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI','Montserrat',system-ui,Arial, sans-serif;
+      background: var(--background);
+      color: var(--text);
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+      padding: 2rem;
+    }
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: var(--shadow);
+      padding: 1.4rem 1.6rem 2rem;
+      position: relative;
+    }
+    /* Barra superior continua, más ancha, con espacio para logo */
+    .top-bar {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      background: var(--accent); /* mantiene el color que dijiste que está perfecto */
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      padding: 12px 20px;
+      height: 88px; /* barra amplia para colocar logo */
+      box-sizing: border-box;
+      color: #fff;
+      margin: -1.4rem -1.6rem 1rem -1.6rem; /* expande la barra hasta los bordes del .container visualmente */
+      overflow: hidden;
+    }
+    /* Si prefieres que la barra no sobresalga de los bordes del container, elimina las márgenes negativas anteriores */
+    .top-bar .brand {
+      display: flex;
+      align-items: center;
+      gap: .9rem;
+    }
+    .brand img#brandLogo {
+      height: 56px;
+      width: auto;
+      display: block;
+      object-fit: contain;
+      filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%); /* aseguro blanco si el logo es SVG/PNG oscuro; puedes quitarlo si no lo deseas */
+    }
+    .brand .brand-text {
+      font-weight: 900;
+      font-size: 1.05rem;
+      letter-spacing: .4px;
+      color: #fff;
+    }
+    .top-bar .spacer {
+      flex: 1 1 auto;
+    }
+    /* Opcional: área derecha para acciones (por ejemplo, un botón pequeño) */
+    .top-bar .actions {
+      display:flex;
+      gap:.5rem;
+      align-items:center;
+    }
+    .top-bar .actions .small-btn {
+      background: transparent;
+      color: rgba(255,255,255,0.95);
+      border: 1px solid rgba(255,255,255,0.08);
+      padding: .4rem .6rem;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: 700;
+    }
+    h1 { margin: 0 0 .2rem; font-size: 1.9rem; color: var(--primary); }
+    .subheader { color: var(--subtext); margin: 0 0 .8rem; }
+    .row { display:flex; align-items:center; gap:.6rem; flex-wrap: wrap;}
+    .grid { display:grid; gap:.7rem; }
+    .g4 { grid-template-columns: repeat(auto-fit,minmax(160px,1fr)); }
+    .chip, .button, select, .input { border-radius: 14px; }
+    .chip {
+      padding: .72rem .9rem; background: #f3f4f6; border: 2px solid var(--border);
+      text-align: center; cursor: pointer; font-weight: 700; transition: .18s; user-select: none;
+    }
+    .chip:hover, .chip:focus { background:#e0e7ff; border-color: var(--primary); }
+    .chip.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+    .button {
+      border: 0; background: var(--primary); color: #fff; font-weight: 800; padding: .88rem 1rem; cursor: pointer;
+    }
+    .button:hover { background: var(--primary-hover); }
+    .button.outline { background: #fff; color: var(--primary); border:2px solid var(--primary); }
+    .button.danger { background: var(--danger); }
+    .button.danger:hover { background: #b91c1c; }
+    .pill {
+      padding: .6rem 1rem; border: 2px solid var(--border); border-radius: 999px;
+      background: #f3f4f6; cursor: pointer; font-weight: 800; user-select: none; transition: .2s;
+      display:inline-block; margin-right:.4rem; margin-top:.2rem;
+    }
+    .pill.active { background: var(--accent); border-color: var(--accent); color:#fff; }
+    select, .input { padding: .7rem 1rem; border: 2px solid var(--border); background: #fff; }
+    .input { width: 100%; }
+    .badge {
+      background: var(--badge-bg); color: var(--badge-text); padding: .45rem .8rem;
+      border-radius: 999px; font-weight: 800; display: inline-flex; gap: .4rem; align-items:center;
+    }
+    .muted { color: #6b7280; }
+    .footer-calc {
+      margin-top: .8rem; padding: 1rem; border: 2px dashed var(--border);
+      border-radius: 14px; background: #fff;
+    }
+    .total { font-size: 1.2rem; font-weight: 900; margin-top: .3rem; }
+    .top-actions { display:flex; gap:.5rem; flex-wrap:wrap; justify-content:flex-end; margin-bottom:.6rem; }
+    .hidden { display:none !important; }
+    .table-wrap {
+      width: 100%;
+      overflow-x: auto;
+      border: 2px solid var(--border);
+      border-radius: 14px;
+      background: #fff;
+    }
+    table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      font-size: 0.95rem;
+    }
+    thead th {
+      position: sticky; top: 0; z-index: 1;
+      background: var(--muted-bg);
+      border-bottom: 2px solid var(--border);
+      padding: .6rem .7rem;
+      text-align: left;
+      font-weight: 800;
+    }
+    tbody td {
+      border-bottom: 1px solid var(--border);
+      padding: .6rem .7rem;
+      vertical-align: top;
+    }
+    tbody tr:hover { background: #fafafa; }
+    .w-compact { width: 44px; }
+    .toggle-btn {
+      border: 2px solid var(--border); width: 32px; height: 32px; border-radius: 8px;
+      background: #fff; cursor: pointer; font-weight: 900;
+      display:flex; align-items:center; justify-content:center;
+    }
+    .toggle-btn[aria-expanded="true"] { background:#eef2ff; border-color:#c7d2fe; }
+    .row-check { width: 18px; height: 18px; }
+    .expanded-row td { background: #f9fafb; border-top: 0; }
+    .chips { display:flex; gap:.4rem; flex-wrap: wrap; }
+    .price { font-weight: 900; white-space: nowrap; }
+    .filter-group { display:flex; flex-direction: column; gap:.25rem; min-width: 200px; }
+    .filter-label { font-size:.85rem; color:#6b7280; font-weight:700; }
+    @media (max-width: 900px) {
+      .top-bar { height: 72px; padding: 10px 16px; }
+      .brand img#brandLogo { height: 48px; }
+    }
+    @media (max-width: 480px) {
+      .top-bar { height: 60px; padding: 8px 12px; }
+      .brand img#brandLogo { height: 40px; }
+      .brand .brand-text { display: none; }
+    }
+  </style>
+  <script>
+    window.storeData = window.storeData || [];
+  </script>
+  <script src="storeData.js"></script>
 </head>
 <body>
-    <h1>Bienvenido a la Calculadora de Impacto</h1>
-    <button onclick="window.open('https://voxpop.com.mx/', '_blank')">Contacto</button>
+<div class="container">
+  <header class="top-bar" role="banner" aria-label="Barra superior">
+    <div class="brand" aria-hidden="false">
+      <img id="brandLogo" src="Logo Blanco.png" alt="VOXPOP logo" />
+      <div class="brand-text">VOXPOP</div>
+    </div>
+    <div class="spacer" aria-hidden="true"></div>
+    <div class="actions" aria-hidden="true">
+      <!-- ejemplo de acción en la barra (opcional) -->
+      <button class="small-btn" type="button" onclick="window.open('https://voxpop.com.mx/', '_blank')">Contacto</button>
+    </div>
+  </header>
+  <div class="top-actions" style="margin-top: .4rem;">
+    <button id="resetBtn" class="button danger hidden" type="button">🗑️ Borrar selección</button>
+  </div>
+  <h1>¿Qué género musical tocas?</h1>
+  <p class="subheader">Elige uno o más géneros. El flujo continuará según tu perfil.</p>
+  <input id="searchGenre" class="input" placeholder="Buscar género…">
+  <div id="genreBadges" class="row" style="margin:.5rem 0;"></div>
+  <div id="genreList" class="grid g4" style="margin-bottom:.6rem;"></div>
+  <div id="artistTypeSection" class="hidden">
+    <h3>¿Eres artista independiente o trabajas con disquera?</h3>
+    <div class="row">
+      <div id="independentBtn" class="chip" role="button" tabindex="0">Independiente</div>
+      <div id="majorBtn" class="chip" role="button" tabindex="0">Major Label</div>
+    </div>
+  </div>
+  <div id="labelsSection" class="hidden" style="margin-top:.6rem;">
+    <h3>¿Con qué disquera trabajas?</h3>
+    <div id="labelList" class="grid g4"></div>
+  </div>
+  <div id="associationsSection" class="hidden" style="margin-top:.6rem;">
+    <h3>¿Perteneces a alguna de estas asociaciones?</h3>
+    <div id="associationList" class="grid g4"></div>
+    <div id="otherAssociationWrap" class="hidden" style="margin-top:.6rem;">
+      <input id="otherAssociationName" class="input" placeholder="Escribe el nombre de tu asociación...">
+    </div>
+    <div class="subheader">Si eliges ANDI, el flujo se detiene.</div>
+  </div>
+  <div id="chainsSection" class="hidden" style="margin-top:.6rem;">
+    <h3>¿En qué cadena te gustaría ser escuchado?</h3>
+    <div id="chainList" class="grid g4"></div>
+  </div>
+  <div id="freqSection" class="hidden" style="margin-top:.6rem;">
+    <h3>¿Cuántas veces al día quieres sonar?</h3>
+    <div class="row">
+      <div class="pill" data-vpd="3">3 Veces</div>
+      <div class="pill" data-vpd="6">6 Veces</div>
+      <div class="pill" data-vpd="9">9 Veces</div>
+    </div>
+  </div>
+  <div id="daysSection" class="hidden" style="margin-top:.6rem;">
+    <h3>¿Por cuántos días quieres ser escuchado?</h3>
+    <div class="row">
+      <div class="pill" data-days="15">15 Días</div>
+      <div class="pill" data-days="30">30 Días</div>
+    </div>
+    <div id="footerCalc" class="footer-calc hidden">
+      <div class="row" style="justify-content:space-between; align-items:center;">
+        <div>
+          <div class="muted" id="countInfo"></div>
+          <div class="total" id="grandTotal">Costo total: $0.00 MXN</div>
+        </div>
+        <div class="row">
+          <button id="exportCsvBtn" class="button" type="button">📤 Enviar solicitud (CSV)</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="marketSection" class="hidden" style="margin-top:1rem;">
+    <div class="row" style="gap:1rem;">
+      <div class="filter-group">
+        <span class="filter-label">Filtrar por formato</span>
+        <select id="formatSelect"><option value="">Mostrar todos</option></select>
+      </div>
+      <div class="filter-group">
+        <span class="filter-label">Filtrar por estado</span>
+        <select id="stateSelect"><option value="">Mostrar todos</option></select>
+      </div>
+      <div class="filter-group">
+        <span class="filter-label">Filtrar por ciudad</span>
+        <select id="citySelect"><option value="">Mostrar todos</option></select>
+      </div>
+    </div>
+    <div id="tableMount" class="table-wrap hidden" style="margin-top:.8rem;"></div>
+  </div>
+</div>
+<!-- Aquí sigue el resto del archivo, igual que lo tienes -->
+<script>
+... [todo el código JavaScript que compartiste] ...
+</script>
 </body>
 </html>

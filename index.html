@@ -6,10 +6,10 @@
   <title>Selector VOXPOP – Cadenas y Calculadora (Final)</title>
   <style>
     :root {
-      /* Opción A - paleta moderna (azul / morado tenue) */
+      /* Colores */
       --primary: #0b467d;
       --primary-hover: #083652;
-      --accent: #06B6D4; /* color usado para chips activos y ahora para la franja superior */
+      --accent: #06B6D4; /* color para chips activos y la franja su */
       --danger: #EF4444;
       --text: #0F172A;
       --subtext: #475569;
@@ -44,22 +44,21 @@
       position: relative;
     }
 
-    /* Barra superior continua, más ancha, con espacio para logo */
+    /* Barra superior */
     .top-bar {
       display: flex;
       align-items: center;
       gap: 1rem;
-      background: var(--accent); /* mantiene el color que dijiste que está perfecto */
+      background: var(--accent); 
       border-top-left-radius: 20px;
       border-top-right-radius: 20px;
       padding: 12px 20px;
-      height: 88px; /* barra amplia para colocar logo */
+      height: 88px;
       box-sizing: border-box;
       color: #fff;
-      margin: -1.4rem -1.6rem 1rem -1.6rem; /* expande la barra hasta los bordes del .container visualmente */
+      margin: -1.4rem -1.6rem 1rem -1.6rem;
       overflow: hidden;
     }
-    /* Si prefieres que la barra no sobresalga de los bordes del container, elimina las márgenes negativas anteriores */
     .top-bar .brand {
       display: flex;
       align-items: center;
@@ -70,7 +69,7 @@
       width: auto;
       display: block;
       object-fit: contain;
-      filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%); /* aseguro blanco si el logo es SVG/PNG oscuro; puedes quitarlo si no lo deseas */
+      filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%);
     }
     .brand .brand-text {
       font-weight: 900;
@@ -81,7 +80,7 @@
     .top-bar .spacer {
       flex: 1 1 auto;
     }
-    /* Opcional: área derecha para acciones (por ejemplo, un botón pequeño) */
+    
     .top-bar .actions {
       display:flex;
       gap:.5rem;
@@ -177,7 +176,6 @@
     .filter-group { display:flex; flex-direction: column; gap:.25rem; min-width: 200px; }
     .filter-label { font-size:.85rem; color:#6b7280; font-weight:700; }
 
-    /* Ajustes responsivos para la barra superior */
     @media (max-width: 900px) {
       .top-bar { height: 72px; padding: 10px 16px; }
       .brand img#brandLogo { height: 48px; }
@@ -185,8 +183,7 @@
     @media (max-width: 480px) {
       .top-bar { height: 60px; padding: 8px 12px; }
       .brand img#brandLogo { height: 40px; }
-      .brand .brand-text { display: none; } /* oculto texto si el espacio es reducido */
-    }
+      .brand .brand-text { display: none; } 
   </style>
   <script>
     window.storeData = window.storeData || [];
@@ -195,10 +192,8 @@
 </head>
 <body>
 <div class="container">
-  <!-- Barra continua amplia en la parte superior para colocar logo -->
   <header class="top-bar" role="banner" aria-label="Barra superior">
     <div class="brand" aria-hidden="false">
-      <!-- Reemplaza logo.png por la ruta real de tu logo. Si quieres un SVG en blanco, úsalo aquí -->
       <img id="brandLogo" src="logo-blanco.png" alt="VOXPOP logo" />
       <div class="brand-text" style="display:none;">VOXPOP</div>
     </div>
@@ -206,7 +201,6 @@
     <div class="spacer" aria-hidden="true"></div>
 
     <div class="actions" aria-hidden="true">
-      <!-- ejemplo de acción en la barra (opcional) -->
      <a class="small-btn" href="https://voxpop.com.mx/" target="_blank" rel="noopener">Contacto</a>
     </div>
   </header>
@@ -1019,12 +1013,10 @@ document.addEventListener('click', (e)=>{
 
 /*
   Función exportSelectedCSV:
-  - Orden de columnas solicitado:
+  - Orden de columnas:
     GENERO_APLICA, GENEROS_SELECCIONADOS, DISQUERA_ASOCIACION,
     CADENA, FORMATO, NOMBRE_INTERNO, ESTADO, CIUDAD,
     POR_EVENTO, VPD, DAYS, TOTAL_POR_TIENDA
-  - Incluye BOM para Excel y timestamp en el nombre del archivo.
-  - Escapa comillas dobles.
 */
 function exportSelectedCSV(){
   const visible = getVisibleRows();

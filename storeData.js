@@ -5646,5 +5646,1197 @@ window.storeData = [
     "ESTADO": "ESTADO DE MEXICO",
     "CIUDAD": "Texcoco de Mora",
     "POR_EVENTO": 0.65
+  },
+{
+    "CADENA": "ANFORA",
+    "FORMATO": "ANFORA",
+    "NOMBRE_INTERNO": "PACHCUA",
+    "ESTADO": "HIDALGO",
+    "CIUDAD": "Pachuca de Soto",
+    "POR_EVENTO": 0.26
+  },
+  {
+    "CADENA": "ANFORA",
+    "FORMATO": "ANFORA",
+    "NOMBRE_INTERNO": "TULA",
+    "ESTADO": "HIDALGO",
+    "CIUDAD": "Tula de Allende",
+    "POR_EVENTO": 0.26
+  },
+  {
+    "CADENA": "ANFORA",
+    "FORMATO": "ANFORA",
+    "NOMBRE_INTERNO": "TULANCINGO",
+    "ESTADO": "HIDALGO",
+    "CIUDAD": "Tulancingo de Bravo",
+    "POR_EVENTO": 0.26
+  },
+  {
+    "CADENA": "AZULEMEX",
+    "FORMATO": "AZULEMEX",
+    "NOMBRE_INTERNO": "EXPO PACHUCA",
+    "ESTADO": "HIDALGO",
+    "CIUDAD": "Pachuca de Soto",
+    "POR_EVENTO": 0.54
+  },
+  {
+    "CADENA": "AZULEMEX",
+    "FORMATO": "AZULEMEX",
+    "NOMBRE_INTERNO": "PACHUCA",
+    "ESTADO": "HIDALGO",
+    "CIUDAD": "Pachuca de Soto",
+    "POR_EVENTO": 0.54
+  },
+  {
+    "CADENA": "AZULEMEX",
+    "FORMATO": "AZULEMEX",
+    "NOMBRE_INTERNO": "TULA",
+    "ESTADO": "HIDALGO",
+    "CIUDAD": "Tula de Allende",
+    "POR_EVENTO": 0.54
+  },
+  {
+    "CADENA": "AZULEMEX",
+    "FORMATO": "AZULEMEX",
+    "NOMBRE_INTERNO": "TULANCINGO",
+    "ESTADO": "HIDALGO",
+    "CIUDAD": "Tulancingo de Bravo",
+    "POR_EVENTO": 0.54
+  },
+  {
+    "CADENA": "AZULEMEX",
+    "FORMATO": "AZULEMEX",
+    "NOMBRE_INTERNO": "TULANCINGO II",
+    "ESTADO": "HIDALGO",
+    "CIUDAD": "Tulancingo de Bravo",
+    "POR_EVENTO": 0.54
+  },
+  {
+    "CADENA": "AZULEMEX",
+    "FORMATO": "AZULEMEX",
+    "NOMBRE_INTERNO": "EXPO PUEBLA",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "Puebla",
+    "POR_EVENTO": 0.54
+  },
+  {
+    "CADENA": "AZULEMEX",
+    "FORMATO": "AZULEMEX",
+    "NOMBRE_INTERNO": "PUEBLA",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "Puebla",
+    "POR_EVENTO": 0.54
+  },
+  {
+    "CADENA": "AZULEMEX",
+    "FORMATO": "AZULEMEX",
+    "NOMBRE_INTERNO": "PUEBLA II",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "Puebla",
+    "POR_EVENTO": 0.54
+  },
+  {
+    "CADENA": "AZULEMEX",
+    "FORMATO": "AZULEMEX",
+    "NOMBRE_INTERNO": "PUEBLA III",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "Puebla",
+    "POR_EVENTO": 0.54
+  },
+  {
+    "CADENA": "AZULEMEX",
+    "FORMATO": "AZULEMEX",
+    "NOMBRE_INTERNO": "PUEBLA IV",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "Puebla",
+    "POR_EVENTO": 0.54
+  },
+  {
+    "CADENA": "AZULEMEX",
+    "FORMATO": "AZULEMEX",
+    "NOMBRE_INTERNO": "SAN MARTIN TEXMELUCAN",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "San Martin Texmelucan",
+    "POR_EVENTO": 0.54
+  },
+  {
+    "CADENA": "AZULEMEX",
+    "FORMATO": "AZULEMEX",
+    "NOMBRE_INTERNO": "TEHUACAN",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "Tehuacan",
+    "POR_EVENTO": 0.54
+  },
+  {
+    "CADENA": "AZULEMEX",
+    "FORMATO": "AZULEMEX",
+    "NOMBRE_INTERNO": "TEXMELUCAN II",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "San Martin Texmelucan",
+    "POR_EVENTO": 0.54
+  },
+  {
+    "CADENA": "BED BATH AND BEYOND",
+    "FORMATO": "HOGAR",
+    "NOMBRE_INTERNO": "PUEBLA",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "Puebla",
+    "POR_EVENTO": 0.39
+  },
+  {
+    "CADENA": "FERRIONI",
+    "FORMATO": "FERRIONI",
+    "NOMBRE_INTERNO": "GALERIAS PACHUCA",
+    "ESTADO": "HIDALGO",
+    "CIUDAD": "Pachuca de Soto",
+    "POR_EVENTO": 0.22
+  },
+  {
+    "CADENA": "FERRIONI",
+    "FORMATO": "FERRIONI",
+    "NOMBRE_INTERNO": "GRAN PATIO PACHUCA",
+    "ESTADO": "HIDALGO",
+    "CIUDAD": "Pachuca de Soto",
+    "POR_EVENTO": 0.22
+  },
+  {
+    "CADENA": "FERRIONI",
+    "FORMATO": "FERRIONI",
+    "NOMBRE_INTERNO": "ANGELOPOLIS",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "Puebla",
+    "POR_EVENTO": 0.22
+  },
+  {
+    "CADENA": "FERRIONI",
+    "FORMATO": "FERRIONI",
+    "NOMBRE_INTERNO": "GALERIAS SERDAN",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "Puebla",
+    "POR_EVENTO": 0.22
+  },
+  {
+    "CADENA": "FERRIONI",
+    "FORMATO": "FERRIONI",
+    "NOMBRE_INTERNO": "OUTLET PUEBLA PREMIER",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "Coronango",
+    "POR_EVENTO": 0.22
+  },
+  {
+    "CADENA": "FERRIONI",
+    "FORMATO": "FERRIONI",
+    "NOMBRE_INTERNO": "PARQUE PUEBLA",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "Puebla",
+    "POR_EVENTO": 0.22
+  },
+  {
+    "CADENA": "IKEA",
+    "FORMATO": "IKEA",
+    "NOMBRE_INTERNO": "PUEBLA",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "San Bernardino Tlaxcalancingo",
+    "POR_EVENTO": 6.48
+  },
+  {
+    "CADENA": "INTERIMOBEL",
+    "FORMATO": "MUEBLERIA",
+    "NOMBRE_INTERNO": "PACHUCA",
+    "ESTADO": "HIDALGO",
+    "CIUDAD": "Pachuca de Soto",
+    "POR_EVENTO": 0.17
+  },
+  {
+    "CADENA": "INTERIMOBEL",
+    "FORMATO": "MUEBLERIA",
+    "NOMBRE_INTERNO": "TIZAYUCA",
+    "ESTADO": "HIDALGO",
+    "CIUDAD": "Tizayuca",
+    "POR_EVENTO": 0.17
+  },
+  {
+    "CADENA": "LA COMER",
+    "FORMATO": "LA COMER",
+    "NOMBRE_INTERNO": "LA COMER-LAS ANIMAS",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "Puebla",
+    "POR_EVENTO": 1.94
+  },
+  {
+    "CADENA": "LA COMER",
+    "FORMATO": "LA COMER",
+    "NOMBRE_INTERNO": "LACOMER-ANGELOPOLIS",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "Puebla",
+    "POR_EVENTO": 1.94
+  },
+  {
+    "CADENA": "LIVERPOOL",
+    "FORMATO": "LIVERPOOL",
+    "NOMBRE_INTERNO": "PACHUCA",
+    "ESTADO": "HIDALGO",
+    "CIUDAD": "Pachuca de Soto",
+    "POR_EVENTO": 1.73
+  },
+  {
+    "CADENA": "LIVERPOOL",
+    "FORMATO": "CLICK N COLLECT",
+    "NOMBRE_INTERNO": "TEPEJI",
+    "ESTADO": "HIDALGO",
+    "CIUDAD": "Tepeji del Rio",
+    "POR_EVENTO": 1.73
+  },
+  {
+    "CADENA": "LIVERPOOL",
+    "FORMATO": "CLICK N COLLECT",
+    "NOMBRE_INTERNO": "TIZAYUCA",
+    "ESTADO": "HIDALGO",
+    "CIUDAD": "Tizayuca",
+    "POR_EVENTO": 1.73
+  },
+  {
+    "CADENA": "LIVERPOOL",
+    "FORMATO": "CLICK N COLLECT",
+    "NOMBRE_INTERNO": "TULA DE ALLENDE",
+    "ESTADO": "HIDALGO",
+    "CIUDAD": "Tula de Allende",
+    "POR_EVENTO": 1.73
+  },
+  {
+    "CADENA": "LIVERPOOL",
+    "FORMATO": "CLICK N COLLECT",
+    "NOMBRE_INTERNO": "TULANCINGO",
+    "ESTADO": "HIDALGO",
+    "CIUDAD": "Tulancingo de Bravo",
+    "POR_EVENTO": 1.73
+  },
+  {
+    "CADENA": "LIVERPOOL",
+    "FORMATO": "LIVERPOOL",
+    "NOMBRE_INTERNO": "ATLIXCO",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "Atlixco",
+    "POR_EVENTO": 1.73
+  },
+  {
+    "CADENA": "LIVERPOOL",
+    "FORMATO": "LIVERPOOL",
+    "NOMBRE_INTERNO": "PUEBLA ANGELOPOLIS",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "Puebla",
+    "POR_EVENTO": 1.73
+  },
+  {
+    "CADENA": "LIVERPOOL",
+    "FORMATO": "LIVERPOOL",
+    "NOMBRE_INTERNO": "PUEBLA CRYSTAL",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "Puebla",
+    "POR_EVENTO": 1.73
+  },
+  {
+    "CADENA": "LIVERPOOL",
+    "FORMATO": "LIVERPOOL",
+    "NOMBRE_INTERNO": "PUEBLA SERDAN",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "Puebla",
+    "POR_EVENTO": 1.73
+  },
+  {
+    "CADENA": "LIVERPOOL",
+    "FORMATO": "LIVERPOOL",
+    "NOMBRE_INTERNO": "PUEBLA ZARAGOZA",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "Puebla",
+    "POR_EVENTO": 1.73
+  },
+  {
+    "CADENA": "LIVERPOOL",
+    "FORMATO": "CLICK N COLLECT",
+    "NOMBRE_INTERNO": "SAN MARTIN TEXMELUCAN",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "San Martin Texmelucan",
+    "POR_EVENTO": 1.73
+  },
+  {
+    "CADENA": "LIVERPOOL",
+    "FORMATO": "LIVERPOOL",
+    "NOMBRE_INTERNO": "TEHUACAN",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "Tehuacan",
+    "POR_EVENTO": 1.73
+  },
+  {
+    "CADENA": "LIVERPOOL",
+    "FORMATO": "CLICK N COLLECT",
+    "NOMBRE_INTERNO": "TEPEACA",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "Tepeaca",
+    "POR_EVENTO": 1.73
+  },
+  {
+    "CADENA": "OFFICE MAX",
+    "FORMATO": "OFFICEMAX",
+    "NOMBRE_INTERNO": "PACHUCA",
+    "ESTADO": "HIDALGO",
+    "CIUDAD": "Pachuca de Soto",
+    "POR_EVENTO": 0.54
+  },
+  {
+    "CADENA": "OFFICE MAX",
+    "FORMATO": "OFFICEMAX",
+    "NOMBRE_INTERNO": "HERMANOS SERDAN",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "Puebla",
+    "POR_EVENTO": 0.54
+  },
+  {
+    "CADENA": "OFFICE MAX",
+    "FORMATO": "OFFICEMAX",
+    "NOMBRE_INTERNO": "PUEBLA",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "Puebla",
+    "POR_EVENTO": 0.54
+  },
+  {
+    "CADENA": "OFFICE MAX",
+    "FORMATO": "OFFICEMAX",
+    "NOMBRE_INTERNO": "SAN PEDRO",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "Puebla",
+    "POR_EVENTO": 0.54
+  },
+  {
+    "CADENA": "PETCO",
+    "FORMATO": "PETCO",
+    "NOMBRE_INTERNO": "PACHUCA",
+    "ESTADO": "HIDALGO",
+    "CIUDAD": "Pachuca de Soto",
+    "POR_EVENTO": 0.76
+  },
+  {
+    "CADENA": "PETCO",
+    "FORMATO": "PETCO",
+    "NOMBRE_INTERNO": "ANGELOPOLIS",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "San Andres Cholula",
+    "POR_EVENTO": 0.76
+  },
+  {
+    "CADENA": "PETCO",
+    "FORMATO": "PETCO",
+    "NOMBRE_INTERNO": "ATLIXCO",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "Atlixco",
+    "POR_EVENTO": 0.76
+  },
+  {
+    "CADENA": "PETCO",
+    "FORMATO": "PETCO",
+    "NOMBRE_INTERNO": "PUEBLA",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "Puebla",
+    "POR_EVENTO": 0.76
+  },
+  {
+    "CADENA": "PETCO",
+    "FORMATO": "PETCO",
+    "NOMBRE_INTERNO": "PUEBLA ZAVALETA",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "Puebla",
+    "POR_EVENTO": 0.76
+  },
+  {
+    "CADENA": "PETCO",
+    "FORMATO": "PETCO",
+    "NOMBRE_INTERNO": "ZONA DORADA",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "Puebla",
+    "POR_EVENTO": 0.76
+  },
+  {
+    "CADENA": "PIZZA HUT",
+    "FORMATO": "PIZZERIA",
+    "NOMBRE_INTERNO": "EXPLANADA PACHUCA",
+    "ESTADO": "HIDALGO",
+    "CIUDAD": "Acaxochitlan",
+    "POR_EVENTO": 0.65
+  },
+  {
+    "CADENA": "PIZZA HUT",
+    "FORMATO": "PIZZERIA",
+    "NOMBRE_INTERNO": "PACHUCA",
+    "ESTADO": "HIDALGO",
+    "CIUDAD": "Pachuca de Soto",
+    "POR_EVENTO": 0.65
+  },
+  {
+    "CADENA": "PIZZA HUT",
+    "FORMATO": "PIZZERIA",
+    "NOMBRE_INTERNO": "PACHUCA NORTE",
+    "ESTADO": "HIDALGO",
+    "CIUDAD": "Pachuca de Soto",
+    "POR_EVENTO": 0.65
+  },
+  {
+    "CADENA": "PRESLOW",
+    "FORMATO": "PRESLOW",
+    "NOMBRE_INTERNO": "PACHUCA",
+    "ESTADO": "HIDALGO",
+    "CIUDAD": "Pachuca de Soto",
+    "POR_EVENTO": 0.11
+  },
+  {
+    "CADENA": "PRESLOW",
+    "FORMATO": "PRESLOW",
+    "NOMBRE_INTERNO": "ATLIXCO",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "Atlixco",
+    "POR_EVENTO": 0.11
+  },
+  {
+    "CADENA": "PRESLOW",
+    "FORMATO": "PRESLOW",
+    "NOMBRE_INTERNO": "PUEBLA",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "Coronango",
+    "POR_EVENTO": 0.11
+  },
+  {
+    "CADENA": "PRESLOW",
+    "FORMATO": "PRESLOW",
+    "NOMBRE_INTERNO": "SAN DIEGO",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "Cholula",
+    "POR_EVENTO": 0.11
+  },
+  {
+    "CADENA": "PRESLOW",
+    "FORMATO": "PRESLOW",
+    "NOMBRE_INTERNO": "SERDAN",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "Puebla",
+    "POR_EVENTO": 0.11
+  },
+  {
+    "CADENA": "SALLY BEAUTY",
+    "FORMATO": "COSMETICOS",
+    "NOMBRE_INTERNO": "EXPLANADA PACHUCA",
+    "ESTADO": "HIDALGO",
+    "CIUDAD": "Pachuca de Soto",
+    "POR_EVENTO": 0.43
+  },
+  {
+    "CADENA": "SALLY BEAUTY",
+    "FORMATO": "COSMETICOS",
+    "NOMBRE_INTERNO": "GALERIAS PACHUCA",
+    "ESTADO": "HIDALGO",
+    "CIUDAD": "Pachuca de Soto",
+    "POR_EVENTO": 0.43
+  },
+  {
+    "CADENA": "SALLY BEAUTY",
+    "FORMATO": "COSMETICOS",
+    "NOMBRE_INTERNO": "GRAN PATIO PACHUCA",
+    "ESTADO": "HIDALGO",
+    "CIUDAD": "Pachuca de Soto",
+    "POR_EVENTO": 0.43
+  },
+  {
+    "CADENA": "SALLY BEAUTY",
+    "FORMATO": "COSMETICOS",
+    "NOMBRE_INTERNO": "ANGELOPOLIS PUEBLA",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "Puebla",
+    "POR_EVENTO": 0.43
+  },
+  {
+    "CADENA": "SALLY BEAUTY",
+    "FORMATO": "COSMETICOS",
+    "NOMBRE_INTERNO": "DOWN TOWN PUEBLA",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "San Andres Cholula",
+    "POR_EVENTO": 0.43
+  },
+  {
+    "CADENA": "SALLY BEAUTY",
+    "FORMATO": "COSMETICOS",
+    "NOMBRE_INTERNO": "EXPLANADA PUEBLA",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "San Andres Cholula",
+    "POR_EVENTO": 0.43
+  },
+  {
+    "CADENA": "SALLY BEAUTY",
+    "FORMATO": "COSMETICOS",
+    "NOMBRE_INTERNO": "GALERIAS SERDAN PUEBLA",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "Puebla",
+    "POR_EVENTO": 0.43
+  },
+  {
+    "CADENA": "SALLY BEAUTY",
+    "FORMATO": "COSMETICOS",
+    "NOMBRE_INTERNO": "PARQUE PUEBLA",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "Puebla",
+    "POR_EVENTO": 0.43
+  },
+  {
+    "CADENA": "SALLY BEAUTY",
+    "FORMATO": "COSMETICOS",
+    "NOMBRE_INTERNO": "VIA SAN ANGEL PUEBLA",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "San Andres Cholula",
+    "POR_EVENTO": 0.43
+  },
+  {
+    "CADENA": "SAMS CLUB",
+    "FORMATO": "SAMS",
+    "NOMBRE_INTERNO": "WSM-PACHUCA",
+    "ESTADO": "HIDALGO",
+    "CIUDAD": "Pachuca de Soto",
+    "POR_EVENTO": 1.51
+  },
+  {
+    "CADENA": "SAMS CLUB",
+    "FORMATO": "SAMS",
+    "NOMBRE_INTERNO": "WSM-TULANCINGO",
+    "ESTADO": "HIDALGO",
+    "CIUDAD": "Tulancingo de Bravo",
+    "POR_EVENTO": 1.51
+  },
+  {
+    "CADENA": "SAMS CLUB",
+    "FORMATO": "SAMS",
+    "NOMBRE_INTERNO": "WSM-ZONA PLATEADA",
+    "ESTADO": "HIDALGO",
+    "CIUDAD": "Pachuca de Soto",
+    "POR_EVENTO": 1.51
+  },
+  {
+    "CADENA": "SAMS CLUB",
+    "FORMATO": "SAMS",
+    "NOMBRE_INTERNO": "WSM-DEFENSORES DE LA REPUBLICA",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "Puebla",
+    "POR_EVENTO": 1.51
+  },
+  {
+    "CADENA": "SAMS CLUB",
+    "FORMATO": "SAMS",
+    "NOMBRE_INTERNO": "WSM-FORJADORES",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "San Andres Cholula",
+    "POR_EVENTO": 1.51
+  },
+  {
+    "CADENA": "SAMS CLUB",
+    "FORMATO": "SAMS",
+    "NOMBRE_INTERNO": "WSM-HOSPITAL GENERAL",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "Puebla",
+    "POR_EVENTO": 1.51
+  },
+  {
+    "CADENA": "SAMS CLUB",
+    "FORMATO": "SAMS",
+    "NOMBRE_INTERNO": "WSM-LA_NORIA",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "Puebla",
+    "POR_EVENTO": 1.51
+  },
+  {
+    "CADENA": "SAMS CLUB",
+    "FORMATO": "SAMS",
+    "NOMBRE_INTERNO": "WSM-TEHUACAN",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "Acajete",
+    "POR_EVENTO": 1.51
+  },
+  {
+    "CADENA": "SAMS CLUB",
+    "FORMATO": "SAMS",
+    "NOMBRE_INTERNO": "WSM-VIA CAPU",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "Puebla",
+    "POR_EVENTO": 1.51
+  },
+  {
+    "CADENA": "SORIANA",
+    "FORMATO": "HIPER",
+    "NOMBRE_INTERNO": "HIPER-PLAZA DEL SOL - Pachuca",
+    "ESTADO": "HIDALGO",
+    "CIUDAD": "Pachuca de Soto",
+    "POR_EVENTO": 2.59
+  },
+  {
+    "CADENA": "SORIANA",
+    "FORMATO": "HIPER",
+    "NOMBRE_INTERNO": "HIPER-PUEBLA CAPU",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "Puebla",
+    "POR_EVENTO": 2.59
+  },
+  {
+    "CADENA": "SORIANA",
+    "FORMATO": "HIPER",
+    "NOMBRE_INTERNO": "HIPER-TORRECILLAS",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "Puebla",
+    "POR_EVENTO": 2.59
+  },
+  {
+    "CADENA": "SORIANA",
+    "FORMATO": "MEGA",
+    "NOMBRE_INTERNO": "MEGA-PACHUCA COLOSIO",
+    "ESTADO": "HIDALGO",
+    "CIUDAD": "Pachuca de Soto",
+    "POR_EVENTO": 2.59
+  },
+  {
+    "CADENA": "SORIANA",
+    "FORMATO": "MEGA",
+    "NOMBRE_INTERNO": "MEGA-TEPEJI DEL RIO",
+    "ESTADO": "HIDALGO",
+    "CIUDAD": "Tepeji del Rio",
+    "POR_EVENTO": 2.59
+  },
+  {
+    "CADENA": "SORIANA",
+    "FORMATO": "MEGA",
+    "NOMBRE_INTERNO": "MEGA-TULANCINGO",
+    "ESTADO": "HIDALGO",
+    "CIUDAD": "Tulancingo de Bravo",
+    "POR_EVENTO": 2.59
+  },
+  {
+    "CADENA": "SORIANA",
+    "FORMATO": "MEGA",
+    "NOMBRE_INTERNO": "MEGA-PUEBLA ANGELOPOLIS",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "Puebla",
+    "POR_EVENTO": 2.59
+  },
+  {
+    "CADENA": "SORIANA",
+    "FORMATO": "MEGA",
+    "NOMBRE_INTERNO": "MEGA-PUEBLA ANGELOPOLIS",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "Puebla",
+    "POR_EVENTO": 2.59
+  },
+  {
+    "CADENA": "SORIANA",
+    "FORMATO": "MEGA",
+    "NOMBRE_INTERNO": "MEGA-PUEBLA CENTRO",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "Puebla",
+    "POR_EVENTO": 2.59
+  },
+  {
+    "CADENA": "SORIANA",
+    "FORMATO": "MEGA",
+    "NOMBRE_INTERNO": "MEGA-PUEBLA HERMANOS SERDAN",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "Puebla",
+    "POR_EVENTO": 2.59
+  },
+  {
+    "CADENA": "SORIANA",
+    "FORMATO": "MEGA",
+    "NOMBRE_INTERNO": "MEGA-PUEBLA PLAZA SAN PEDRO",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "Puebla",
+    "POR_EVENTO": 2.59
+  },
+  {
+    "CADENA": "SORIANA",
+    "FORMATO": "MEGA",
+    "NOMBRE_INTERNO": "MEGA-PUEBLA ZARAGOZA",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "Puebla",
+    "POR_EVENTO": 2.59
+  },
+  {
+    "CADENA": "SORIANA",
+    "FORMATO": "MERCADO",
+    "NOMBRE_INTERNO": "MERCA-ACTOPAN",
+    "ESTADO": "HIDALGO",
+    "CIUDAD": "Pachuca de Soto",
+    "POR_EVENTO": 1.3
+  },
+  {
+    "CADENA": "SORIANA",
+    "FORMATO": "MERCADO",
+    "NOMBRE_INTERNO": "MERCA-IXMIQUILPAN",
+    "ESTADO": "HIDALGO",
+    "CIUDAD": "Ixniquilpan",
+    "POR_EVENTO": 1.3
+  },
+  {
+    "CADENA": "SORIANA",
+    "FORMATO": "MERCADO",
+    "NOMBRE_INTERNO": "MERCA-LAS VILLAS",
+    "ESTADO": "HIDALGO",
+    "CIUDAD": "Pachuca de Soto",
+    "POR_EVENTO": 1.3
+  },
+  {
+    "CADENA": "SORIANA",
+    "FORMATO": "MERCADO",
+    "NOMBRE_INTERNO": "MERCA-MINERAL DE LA REFORMA",
+    "ESTADO": "HIDALGO",
+    "CIUDAD": "Pachuca de Soto",
+    "POR_EVENTO": 1.3
+  },
+  {
+    "CADENA": "SORIANA",
+    "FORMATO": "MERCADO",
+    "NOMBRE_INTERNO": "MERCA-TIZAYUCA",
+    "ESTADO": "HIDALGO",
+    "CIUDAD": "Tizayuca",
+    "POR_EVENTO": 1.3
+  },
+  {
+    "CADENA": "SORIANA",
+    "FORMATO": "MERCADO",
+    "NOMBRE_INTERNO": "MERCA-TULA",
+    "ESTADO": "HIDALGO",
+    "CIUDAD": "Tula de Allende",
+    "POR_EVENTO": 1.3
+  },
+  {
+    "CADENA": "SORIANA",
+    "FORMATO": "MERCADO",
+    "NOMBRE_INTERNO": "MERCA-TUTELAR",
+    "ESTADO": "HIDALGO",
+    "CIUDAD": "Pachuca de Soto",
+    "POR_EVENTO": 1.3
+  },
+  {
+    "CADENA": "SORIANA",
+    "FORMATO": "MERCADO",
+    "NOMBRE_INTERNO": "MERCA-14 SUR",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "Puebla",
+    "POR_EVENTO": 1.3
+  },
+  {
+    "CADENA": "SORIANA",
+    "FORMATO": "MERCADO",
+    "NOMBRE_INTERNO": "MERCA-AMALUCAN",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "Puebla",
+    "POR_EVENTO": 1.3
+  },
+  {
+    "CADENA": "SORIANA",
+    "FORMATO": "MERCADO",
+    "NOMBRE_INTERNO": "MERCA-ATLIXCO",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "Atlixco",
+    "POR_EVENTO": 1.3
+  },
+  {
+    "CADENA": "SORIANA",
+    "FORMATO": "MERCADO",
+    "NOMBRE_INTERNO": "MERCA-BOSQUES",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "Puebla",
+    "POR_EVENTO": 1.3
+  },
+  {
+    "CADENA": "SORIANA",
+    "FORMATO": "MERCADO",
+    "NOMBRE_INTERNO": "MERCA-PROVIDENCIA",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "Puebla",
+    "POR_EVENTO": 1.3
+  },
+  {
+    "CADENA": "SORIANA",
+    "FORMATO": "MERCADO EXPRESS",
+    "NOMBRE_INTERNO": "MEEXP-SERDAN",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "Serdan",
+    "POR_EVENTO": 0.65
+  },
+  {
+    "CADENA": "SUBURBIA",
+    "FORMATO": "SUBURBIA",
+    "NOMBRE_INTERNO": "PACHUCA EXPLANADA PISO",
+    "ESTADO": "HIDALGO",
+    "CIUDAD": "Pachuca de Soto",
+    "POR_EVENTO": 1.51
+  },
+  {
+    "CADENA": "SUBURBIA",
+    "FORMATO": "SUBURBIA",
+    "NOMBRE_INTERNO": "PACHUCA PISO",
+    "ESTADO": "HIDALGO",
+    "CIUDAD": "Pachuca de Soto",
+    "POR_EVENTO": 1.51
+  },
+  {
+    "CADENA": "SUBURBIA",
+    "FORMATO": "SUBURBIA",
+    "NOMBRE_INTERNO": "TIZAYUCA",
+    "ESTADO": "HIDALGO",
+    "CIUDAD": "Tizayuca",
+    "POR_EVENTO": 1.51
+  },
+  {
+    "CADENA": "SUBURBIA",
+    "FORMATO": "SUBURBIA",
+    "NOMBRE_INTERNO": "TULA PLAZA BOULEVARD",
+    "ESTADO": "HIDALGO",
+    "CIUDAD": "Tula de Allende",
+    "POR_EVENTO": 1.51
+  },
+  {
+    "CADENA": "SUBURBIA",
+    "FORMATO": "SUBURBIA",
+    "NOMBRE_INTERNO": "TULANCINGO PATIO",
+    "ESTADO": "HIDALGO",
+    "CIUDAD": "Tulancingo de Bravo",
+    "POR_EVENTO": 1.51
+  },
+  {
+    "CADENA": "SUBURBIA",
+    "FORMATO": "SUBURBIA",
+    "NOMBRE_INTERNO": "AMALUCAN",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "Puebla",
+    "POR_EVENTO": 1.51
+  },
+  {
+    "CADENA": "SUBURBIA",
+    "FORMATO": "SUBURBIA",
+    "NOMBRE_INTERNO": "FORJADORES PISO",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "Puebla",
+    "POR_EVENTO": 1.51
+  },
+  {
+    "CADENA": "SUBURBIA",
+    "FORMATO": "SUBURBIA",
+    "NOMBRE_INTERNO": "MAYORAZGO PISO",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "Puebla",
+    "POR_EVENTO": 1.51
+  },
+  {
+    "CADENA": "SUBURBIA",
+    "FORMATO": "SUBURBIA JR",
+    "NOMBRE_INTERNO": "PARQUE PUEBLA JR",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "Puebla",
+    "POR_EVENTO": 1.51
+  },
+  {
+    "CADENA": "SUBURBIA",
+    "FORMATO": "SUBURBIA",
+    "NOMBRE_INTERNO": "PARQUE PUEBLA PISO",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "Puebla",
+    "POR_EVENTO": 1.51
+  },
+  {
+    "CADENA": "SUBURBIA",
+    "FORMATO": "SUBURBIA",
+    "NOMBRE_INTERNO": "PLAZA DORADA PISO",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "Puebla",
+    "POR_EVENTO": 1.51
+  },
+  {
+    "CADENA": "SUBURBIA",
+    "FORMATO": "SUBURBIA",
+    "NOMBRE_INTERNO": "PLAZA VICTORIA PISO",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "Puebla",
+    "POR_EVENTO": 1.51
+  },
+  {
+    "CADENA": "SUBURBIA",
+    "FORMATO": "SUBURBIA",
+    "NOMBRE_INTERNO": "PUEBLA REFORMA PISO",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "Puebla",
+    "POR_EVENTO": 1.51
+  },
+  {
+    "CADENA": "SUBURBIA",
+    "FORMATO": "SUBURBIA",
+    "NOMBRE_INTERNO": "TEHUACAN PISO",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "Tehuacan",
+    "POR_EVENTO": 1.51
+  },
+  {
+    "CADENA": "SUPER MAYOREO NATURISTA",
+    "FORMATO": "SUPER MAYOREO NAT",
+    "NOMBRE_INTERNO": "GALERIAS PACHUCA",
+    "ESTADO": "HIDALGO",
+    "CIUDAD": "Pachuca de Soto",
+    "POR_EVENTO": 0.26
+  },
+  {
+    "CADENA": "SUPER MAYOREO NATURISTA",
+    "FORMATO": "SUPER MAYOREO NAT",
+    "NOMBRE_INTERNO": "PATIO PACHUCA",
+    "ESTADO": "HIDALGO",
+    "CIUDAD": "Pachuca de Soto",
+    "POR_EVENTO": 0.26
+  },
+  {
+    "CADENA": "SUPER MAYOREO NATURISTA",
+    "FORMATO": "SUPER MAYOREO NAT",
+    "NOMBRE_INTERNO": "TULANCINGO",
+    "ESTADO": "HIDALGO",
+    "CIUDAD": "Tulancingo de Bravo",
+    "POR_EVENTO": 0.26
+  },
+  {
+    "CADENA": "SUPER MAYOREO NATURISTA",
+    "FORMATO": "SUPER MAYOREO NAT",
+    "NOMBRE_INTERNO": "BOULEVARD NORTE",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "Puebla",
+    "POR_EVENTO": 0.26
+  },
+  {
+    "CADENA": "SUPER MAYOREO NATURISTA",
+    "FORMATO": "SUPER MAYOREO NAT",
+    "NOMBRE_INTERNO": "PARQUE PUEBLA",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "Puebla",
+    "POR_EVENTO": 0.26
+  },
+  {
+    "CADENA": "SUPER MAYOREO NATURISTA",
+    "FORMATO": "SUPER MAYOREO NAT",
+    "NOMBRE_INTERNO": "PLAZA DORADA",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "Puebla",
+    "POR_EVENTO": 0.26
+  },
+  {
+    "CADENA": "SUPER MAYOREO NATURISTA",
+    "FORMATO": "SUPER MAYOREO NAT",
+    "NOMBRE_INTERNO": "PUEBLA NORTE",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "Puebla",
+    "POR_EVENTO": 0.26
+  },
+  {
+    "CADENA": "SUPER MAYOREO NATURISTA",
+    "FORMATO": "SUPER MAYOREO NAT",
+    "NOMBRE_INTERNO": "TEHUACAN PUEBLA",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "Tehuacan",
+    "POR_EVENTO": 0.26
+  },
+  {
+    "CADENA": "SUPER MAYOREO NATURISTA",
+    "FORMATO": "SUPER MAYOREO NAT",
+    "NOMBRE_INTERNO": "VIA SAN ANGEL PUEBLA",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "San Andres Cholula",
+    "POR_EVENTO": 0.26
+  },
+  {
+    "CADENA": "UNIVERSO DE FRAGANCIAS",
+    "FORMATO": "PERFUMERIA",
+    "NOMBRE_INTERNO": "AGUA AZUL",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "Heroica Puebla de Zaragoza",
+    "POR_EVENTO": 0.32
+  },
+  {
+    "CADENA": "WAL-MART",
+    "FORMATO": "SUPERCENTER",
+    "NOMBRE_INTERNO": "WAL-CARDENAS TULANCINGO",
+    "ESTADO": "HIDALGO",
+    "CIUDAD": "Tulancingo de Bravo",
+    "POR_EVENTO": 7.34
+  },
+  {
+    "CADENA": "WAL-MART",
+    "FORMATO": "SUPERCENTER",
+    "NOMBRE_INTERNO": "WAL-COLOSIO PACHUCA",
+    "ESTADO": "HIDALGO",
+    "CIUDAD": "Pachuca de Soto",
+    "POR_EVENTO": 7.34
+  },
+  {
+    "CADENA": "WAL-MART",
+    "FORMATO": "SUPERCENTER",
+    "NOMBRE_INTERNO": "WAL-COMBO PACHUCA",
+    "ESTADO": "HIDALGO",
+    "CIUDAD": "Pachuca de Soto",
+    "POR_EVENTO": 7.34
+  },
+  {
+    "CADENA": "WAL-MART",
+    "FORMATO": "SUPERCENTER",
+    "NOMBRE_INTERNO": "WAL-ZONA PLATEADA",
+    "ESTADO": "HIDALGO",
+    "CIUDAD": "Pachuca de Soto",
+    "POR_EVENTO": 7.34
+  },
+  {
+    "CADENA": "WAL-MART",
+    "FORMATO": "SUPERCENTER",
+    "NOMBRE_INTERNO": "WAL-15 DE MAYO",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "Puebla",
+    "POR_EVENTO": 7.34
+  },
+  {
+    "CADENA": "WAL-MART",
+    "FORMATO": "SUPERCENTER",
+    "NOMBRE_INTERNO": "WAL-ANGELOPOLIS",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "San Andres Cholula",
+    "POR_EVENTO": 7.34
+  },
+  {
+    "CADENA": "WAL-MART",
+    "FORMATO": "SUPERCENTER",
+    "NOMBRE_INTERNO": "WAL-CIUDAD JUDICIAL",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "San Andres Cholula",
+    "POR_EVENTO": 7.34
+  },
+  {
+    "CADENA": "WAL-MART",
+    "FORMATO": "SUPERCENTER",
+    "NOMBRE_INTERNO": "WAL-EL PASEO TEHUACAN",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "Tehuacan",
+    "POR_EVENTO": 7.34
+  },
+  {
+    "CADENA": "WAL-MART",
+    "FORMATO": "SUPERCENTER",
+    "NOMBRE_INTERNO": "WAL-GRAND LOMAS",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "San Andres Cholula",
+    "POR_EVENTO": 7.34
+  },
+  {
+    "CADENA": "WAL-MART",
+    "FORMATO": "SUPERCENTER",
+    "NOMBRE_INTERNO": "WAL-HOSPITAL GENERAL",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "Puebla",
+    "POR_EVENTO": 7.34
+  },
+  {
+    "CADENA": "WAL-MART",
+    "FORMATO": "SUPERCENTER",
+    "NOMBRE_INTERNO": "WAL-LAS ANIMAS",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "Puebla",
+    "POR_EVENTO": 7.34
+  },
+  {
+    "CADENA": "WAL-MART",
+    "FORMATO": "SUPERCENTER",
+    "NOMBRE_INTERNO": "WAL-LOS PINOS ZARAGOZA",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "Puebla",
+    "POR_EVENTO": 7.34
+  },
+  {
+    "CADENA": "WAL-MART",
+    "FORMATO": "SUPERCENTER",
+    "NOMBRE_INTERNO": "WAL-REFORMA",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "Puebla",
+    "POR_EVENTO": 7.34
+  },
+  {
+    "CADENA": "WAL-MART",
+    "FORMATO": "SUPERCENTER",
+    "NOMBRE_INTERNO": "WAL-SAN MANUEL",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "Puebla",
+    "POR_EVENTO": 7.34
+  },
+  {
+    "CADENA": "WAL-MART",
+    "FORMATO": "SUPERCENTER",
+    "NOMBRE_INTERNO": "WAL-SAN MARTIN TEXMELUCAN",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "San Martin Texmelucan",
+    "POR_EVENTO": 7.34
+  },
+  {
+    "CADENA": "WAL-MART",
+    "FORMATO": "SUPERCENTER",
+    "NOMBRE_INTERNO": "WAL-VILLA VERDE",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "Puebla",
+    "POR_EVENTO": 7.34
+  },
+  {
+    "CADENA": "WAL-MART",
+    "FORMATO": "WALMART EXPRESS",
+    "NOMBRE_INTERNO": "WMEXS-LA NORIA",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "Tochtepec",
+    "POR_EVENTO": 1.73
+  },
+  {
+    "CADENA": "WAL-MART",
+    "FORMATO": "WALMART EXPRESS",
+    "NOMBRE_INTERNO": "WMEXS-LOMAS DEL VALLE",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "Puebla",
+    "POR_EVENTO": 1.73
+  },
+  {
+    "CADENA": "WAL-MART",
+    "FORMATO": "WALMART EXPRESS",
+    "NOMBRE_INTERNO": "WMEXS-ZAVALETA",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "Tochtepec",
+    "POR_EVENTO": 1.73
+  },
+  {
+    "CADENA": "WOOLWORTH",
+    "FORMATO": "WOOLWORTH",
+    "NOMBRE_INTERNO": "262 PACHUCA PLAZA BELLA",
+    "ESTADO": "HIDALGO",
+    "CIUDAD": "Pachuca de Soto",
+    "POR_EVENTO": 0.65
+  },
+  {
+    "CADENA": "WOOLWORTH",
+    "FORMATO": "WOOLWORTH",
+    "NOMBRE_INTERNO": "269 TIZAYUCA",
+    "ESTADO": "HIDALGO",
+    "CIUDAD": "Tizayuca",
+    "POR_EVENTO": 0.65
+  },
+  {
+    "CADENA": "WOOLWORTH",
+    "FORMATO": "WOOLWORTH",
+    "NOMBRE_INTERNO": "207 PUEBLA",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "Puebla",
+    "POR_EVENTO": 0.65
+  },
+  {
+    "CADENA": "WOOLWORTH",
+    "FORMATO": "WOOLWORTH",
+    "NOMBRE_INTERNO": "239 TEHUACAN",
+    "ESTADO": "PUEBLA",
+    "CIUDAD": "Tehuacan",
+    "POR_EVENTO": 0.65
   }
 ];
